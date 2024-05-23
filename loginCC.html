@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styleloginCC.css">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Bem-vindo ao CondoCommunity <br> Faça seu login para entrar no sistema.</h1>
+  <div class="container">
+    <div class="form-image"></div>
+    <div class="buttonsForm">
+      <div class="btnColor"></div>
+      <button id="btnSignin" >Sign in</button>
+      <button id="btnAdmin" >Admin</button>
+    </div>
+
+    <form id="signin">
+      <input type="text" placeholder="Email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Password" required />
+      <i class="fas fa-lock iPassword"></i>
+      <div class="divCheck">
+        <input type="checkbox" />
+        <span>Lembrar Senha</span>
+      </div>
+      <button type="submit" id="btnLogin" onclick="location.href='index.html'">Login</button>
+    </form>
+
+    <form id="admin">
+      <input type="text" placeholder="Email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Password" required />
+      <i class="fas fa-lock iPassword"></i>
+      <input type="text" placeholder="RA" required />
+      <i class="fas fa-id-card iRA"></i>
+      <div class="divCheck">
+        <input type="checkbox" required />
+        <span>Autorizado</span>
+      </div>
+      <button type="submit" id="btnLogin" onclick="location.href='index.html'">Login</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

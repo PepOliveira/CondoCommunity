@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CondoCommunity Form</title>
+  <link rel="stylesheet" href="styleformulario.css">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <span class="big-circle"></span>
+    <img src="img/shape.png" class="square" alt="">
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Vamos registrar sua reclamação</h3>
+        <p class="text">Sua opinião e contribuição são fundamentais para mantermos nosso condomínio seguro e bem-cuidado. Por favor, utilize o formulário para relatar qualquer problema ou inconveniente que você identificar nas áreas do nosso condomínio.
+<br>
+<br>
+          Agradecemos antecipadamente por sua colaboração. Juntos, tornamos nosso lar um lugar ainda melhor para viver.</p>
+        <div class="info">
+          <div class="information">
+            <img src="img/location.png" class="icon" alt="">
+            <p>Assim que possível, nosso Admin entrará em contato com você</p>
+          </div>
+          <div class="information">
+            <img src="img/email.png" class="icon" alt="">
+            <p>condocommunity123@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+        <form action="index.html" autocomplete="off">
+          <h3 class="title">Digite Aqui</h3>
+          
+          <div class="input-container">
+            <input type="text" name="name" class="input">
+            <label for="">Nome</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container">
+            <input type="text" name="quadraelote" class="input">
+            <label for="">Quadra e Lote</label>
+            <span>Text</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="telefone" class="input">
+            <label for="">Telefone</label>
+            <span>Telefone</span>
+          </div>
+          <div class="input-container">
+            <label for="reclamacao" class="input-label"></label>
+            <select id="reclamacao" class="input-select" required>
+              <option value="" disabled selected>Selecione sua reclamação</option>
+              <option value="agua">Problema com água</option>
+              <option value="energia">Problema com energia elétrica</option>
+              <option value="seguranca">Questões de segurança</option>
+              <option value="limpeza">Problemas de limpeza</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+          
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Mensagem</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Enviar" class="btn">
+        </form>
+        <div class="back-button">
+            <a href="index.html">
+              <i class="fas fa-arrow-left"></i> Voltar para a Página Principal
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="mainformulario.js"></script>
+</body>
+</html>
